@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirushani Umayanga - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #4F46E5, #9333EA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .nav-link.active {
+            color: #4F46E5;
+            border-bottom: 2px solid #4F46E5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" onclick="showPage('home')" class="text-2xl font-bold gradient-text">HiRu</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#" onclick="showPage('home')" class="nav-link text-gray-700 hover:text-indigo-600 py-5">HOME</a>
+                    <a href="#" onclick="showPage('about')" class="nav-link text-gray-700 hover:text-indigo-600 py-5">ABOUT ME</a>
+                    <a href="#" onclick="showPage('contact')" class="nav-link text-gray-700 hover:text-indigo-600 py-5">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="pt-20 min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                            Hirushani Umayanga
+                        </h1>
+                        <p class="text-xl text-white opacity-90 mb-8">
+                            Computer Science Professional | Machine Learning Enthusiast | Educator
+                        </p>
+                        <div class="flex space-x-4">
+                            <button onclick="showPage('contact')" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition duration-300">
+                                Get in Touch
+                            </button>
+                            <button onclick="showPage('about')" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition duration-300">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="HomeImage.jpeg" alt="Hirushani Umayanga" class="rounded-full w-80 h-80 mx-auto object-cover shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="pt-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<p class="text-gray-600 leading-relaxed" style="text-align: center;">
+                            An academically motivated Computer Science graduate currently serving as a Temporary Lecturer at the University of Kelaniya. With a strong foundation in machine learning and data science, I'm passionate about advancing research in these fields and exploring their intersections with emerging technologies.
+                        </p><br>
+                <!-- Research Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Research</h2>
+                    
+                    <!-- Research Interests -->
+                    <div class="section-card mb-8">
+                        <h3 class="section-title"><b>RESEARCH INTERESTS</b></h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold mb-3">Primary</h4>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li>Machine Learning</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Data Mining</li>
+                                    <li>Data Science</li>
+                                    <li>Deep Learning</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-3">Other</h4>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li>Reinforcement Learning</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Time-Series Forecasting</li>
+                                    <li>Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+		    <!-- Publications -->
+                    <div class="section-card">
+                        <h3 class="section-title"><b>PUBLICATIONS</b></h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Machine Learning Model Accuracy Optimization | Undergaduate Research</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Note: Abstract of successding manuscript tiltled "Machine learning model to predict bank customer next expenditure with relevant merchant category" with premilinary results.</li>
+                                    <li>Published in the Proceedings of International Conference on Applied & Pure Sciences (ICAPS 2023)</li>
+				    <li><a style="color:blue;target:_blank;" href="http://repository.kln.ac.lk/handle/123456789/26951">Abstract</a>,<a style="color:blue;" href="https://conf.kln.ac.lk/icaps/images/2023/files/proceedings/icaps-2023-proceedings.pdf"> Proceedings</a>(paper ID: SO-02),<a style="color:blue;" href="https://conf.kln.ac.lk/icaps/">Conference Home</a></li>
+                                </ul>
+                            </div>
+
+                    <!-- Research Experience -->
+                    <div class="section-card">
+                        <h3 class="section-title"><b>RESEARCH EXPERIENCE</b></h3>
+                        <div class="space-y-6">
+			    <div>
+                                <h4 class="font-semibold mb-2">Financial Management Alert System | Nov 2023 - Current</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Optimize the accuracy of the model, using four machine learning algorithms: Gradient Boosting Regressor, Random 
+Forest Regressor, Random Forest Classifier, and Long Short-Term Memory as an extended version of my first research.</li>
+                                    <li><a style="color:blue;target:_blank;" href="https://github.com/Umayanga98H/Abstract_Financial_management_alert_system_using_Machine_Learning/blob/main/Abstract%20-%20Financila%20managment%20alert%20system%20using%20Machine%20Learning.pdf">Abstract</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Machine learning model to predict bank customer next expenditure with relevant merchant category | May 2022 - May 2023</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Predicted customer's next expenditure and the corresponding merchant category using 50 customers' debit 
+card transaction data for 11 years.</li>
+                                    <li>Try to optimize the accuracy of model, using different machine learning algorithms: Gradient Boosting 
+Regressor, Random Forest Regressor and Random Forest Classifier </li>
+                                </ul>
+                            </div>
+<br>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Academics</h2>
+                    <div class="section-card">
+                        <h3 class="text-xl font-bold mb-1">Bachelor of Science Honours in Computer Science | Feb 2019 - Jul 2023</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">University of Kelaniya,Dalugama</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Class: First Class</li>
+                                <li>Major GPA: 3.74</li>
+                                <li>Minors: Pure Mathematics, Statistics, Chemistry</li>
+                            </ul>
+                        </div><br>
+                    </div>
+		    <div class="section-card">
+                        <h3 class="text-xl font-bold mb-1">General Certification of Education (Advanced Level) Examination, Sri Lanka | 2017</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">WP/GM Yasodara Devi Balika Vidyalaya,Gampaha</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Index No: 5381363</li>
+                                <li>Z-Score Marks: +1.0544</li>
+                                <li>Common General Test Marks: 62</li>
+				<li>1 B's and 2 C's</li>
+                            </ul>
+                        </div><br>
+                    </div>
+<div class="section-card">
+                        <h3 class="text-xl font-bold mb-1">General Certification of Education (Ordinary Level) Examination, Sri Lanka | 2014</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">WP/GM Galahitiyawa Central College</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Index No: 40530795</li>
+				<li>9 A's and 3 B's</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+		<!-- Honours & Awards Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Honors & Awards</h2>
+			<div class="space-y-6">
+			    <div>
+                                <h4 class="font-semibold mb-2">Dean's List -Faculty of Science, University of Kelaniya | Jan 2024</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Academic Year 2020/2021 Awarded for the excellence in academic performance in the 4<sup>th</sup> year</li>
+                                    <li>Dean's List : <a style="color:blue;target:_blank;" href="https://science.kln.ac.lk/media/attachments/2024/02/15/deans-list---ac-yr-2020_2021.pdf">PS/2017/199 - A.M.K.H.Umayanga on 6th page</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Dean's List -Faculty of Science, University of Kelaniya | Aug 2022 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Academic Year 2018/2019 Awarded for the excellence in academic performance in the 2<sup>nd</sup> year</li>
+                                    <li>Dean's List : <a style="color:blue;target:_blank;" href="https://science.kln.ac.lk/media/attachments/2023/05/30/deans-list---ac-yr-2018_2019.pdf">PS/2017/199 - A.M.K.H.Umayanga on 4th page</a></li>
+                                </ul>
+                            </div>
+                    </div>
+		</div>
+		<!-- Employement Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Employement History</h2>
+                    <div class="section-card">
+                        <h3 class="text-xl font-bold mb-1">Temporary Lecturer | Feb 2024 - Current </h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">Department of Statistics & Computer Science, University of Kelaniya, Dalugama </p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Conducting lectures in CMSK 14042 – Computer Hardware and Consumer Electronics</li>
+                                <li>Conducting lecturers and practical classes in COST 22073 - Web Development (HTML, CSS, JavaScript, PHP)</li>
+                                <li>Conducting lecturers and practical classes in COST 22162 – Computer Applications (MS office Packages, Latex, Linux, 
+AutoCAD) </li>
+				<li>Assistance support for practical classes in COSC 22083/BECS 22243 – Database Management Systems (SQL) </li>
+				<li>Supervising final group projects in COSC 32133/BECS 32263 – Full-Stack Software Development (Git, React,Spring Boot, 
+MongoDB)</li>
+				<li>Conducted lecturers and practical classes in COSC 31112/BECS 31242 – Visual Programming (C#) </li>
+				<li>Conducted lecturers in COST 31122/COST 31202 – Software Project Management </li>
+				<li>Company Website URL : <a style="color:blue;target:_blank;" href="https://science.kln.ac.lk/depts/stcs/index.php/staff/temporary-staff">Department of Statistics & Computer Science</a></li>
+
+                            </ul>
+                        </div><br>
+                    </div>
+		    <div class="section-card">
+                        <h3 class="text-xl font-bold mb-1">Temporary Demonstrator  | July 2023 - Feb 2024</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">Department of Statistics & Computer Science, University of Kelaniya, Daluagama</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Conducted tutorial classes in COSC 22073/BECS 22233 – Computer Architecture and Operating Systems</li>
+                                <li>Conducted tutorial classes in COST 31112/COST 31192 – Human Computer Interaction</li>
+                                <li>Assistance support for practical classes in BECS 11223 – Fundamentals of Programming (C), COSC 
+12043/BECS 12243 Object Oriented Programming (Java), COST 32152/COST 32222 Mobile Application 
+Development (Kotlin), COST 44233 – Data Structures and Algorithms (Java) </li>
+                            </ul>
+                        </div><br>
+                    </div>
+<div class="section-card">
+                        <h3 class="text-xl font-bold mb-1">Trainee Software Engineer  | Feb 2023 - Aug 2023</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-600">Jinasena Info Tech Pvt Ltd – Colombo 08</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Development and Customization of modules in Microsoft Dynamics NAV/Business Central</li>
+				<li>Troubleshooting issues arise in ongoing ERP projects</li>
+				<li>Learn to use Microsoft Dynamics 365 Nav & Business Central</li>
+				<li>Company Website URL: <a style="color:blue;target:_blank;" href="https://jinasenainfotech.com/">Jinasena Info Tech Pvt Ltd</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<!-- Extra Curricular activities -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Extra - Curricular Activities</h2>
+			<div class="space-y-4">
+			    <div>
+                                <h4 class="font-semibold mb-2">Main Coordinator at Statistics & Computer Science Camp 2025 | Nov 2024 - Current</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Communicate and event managment between senior staff and teaching assistant staff</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Treasurer at Statistics & Computer Science Camp 2024 | Jan 2024 - Feb 2024 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Handling Cash, Vouchers and bill payments, Preparation of final budget report </li>
+                                </ul>
+                            </div>
+			    <div>
+                                <h4 class="font-semibold mb-2">Secretary at Adventure Club, University of Kelaniya| Sep 2022 - Apr 2023 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li> Handling member recruitment process of 6 facilities in the University, and manage database of both current 
+members and Alumni of the Club <a style="color:blue;target:_blank;" href = "https://www.linkedin.com/posts/hirushaniu_leader-activity-6975174705427222530-qtqV?utm_source=share&utm_medium=member_desktop">Reference</a> </li>
+                                </ul>
+                            </div>
+			    <div>
+                                <h4 class="font-semibold mb-2">Web Developer at LED KLN, University of Kelaniya | May 2022 – Feb 2023 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li> Design and develop new features and maintain the club website with other developers <a style="color:blue;target:_blank;" href = "https://www.linkedin.com/posts/hirushaniu_work-hard-in-silence-let-success-be-your-activity-6975175801310760960-jSoe?utm_source=share&utm_medium=member_desktop">Reference</a></li>
+                                </ul>
+                            </div>
+			    <div>
+                                <h4 class="font-semibold mb-2">Faculty Representative at Adventure Club, University of Kelaniya | Sep 2021 – May 2022  </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Represented all members of the Science Faculty  </li>
+                                </ul>
+                            </div>
+			    <div>
+                                <h4 class="font-semibold mb-2">Content creator at Adventure Club, University of Kelaniya | Sep 2021 – May 2022  </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Create content for the website and write articles <a style="color:blue;target:_blank;" href = "https://ac-uok.netlify.app/diary/diary3">Reference</a> </li>
+                                </ul>
+                            </div>
+			    <div>
+                                <h4 class="font-semibold mb-2">Flyer Designer at LED KLN, University of Kelaniya | Jun 2021 – Jul 2021 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Design flyers and posters for announcement in the club using Canva <a style="color:blue;target:_blank;" href = "https://media.licdn.com/dms/image/v2/C562DAQHupAYsyQ9X7Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1624442932919?e=1735455600&v=beta&t=PWs2LNFLcc-DSMulhbQbo_Hj6afPu5d-M02Wx-c3nJs">Reference</a>  </li>
+                                </ul>
+                            </div>
+			     <div>
+                                <h4 class="font-semibold mb-2">Treasurer at Rota tomorrow - Team H, Rotaract Club of University of Kelaniya | Dec 2020 – May 2021 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Conduct online seminar series of three main subjects to Ordinary Level students in all around Sri Lanka</li>
+				    <li>Team H – Reboot, won the 1st Runner Up Award among ten other teams <a style="color:blue;target:_blank;" href = "https://www.linkedin.com/posts/hirushaniu_rotaract-srilanka-rotaract3220-activity-6771483371748126720-ZO0p?utm_source=share&utm_medium=member_desktop">Reference</a> </li>
+                                </ul>
+                            </div>
+			    <div>
+                                <h4 class="font-semibold mb-2">Member at Galahitiyawa Old Scout Association - 4th Gampaha Scout Group | Jan 2016 – Current  </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Work as a volunteer scout guide for the junior batch <a style="color:blue;target:_blank;" href = "https://www.facebook.com/share/1XaF38ptJw/">Reference</a> </li>
+                                </ul>
+                            </div>
+			     <div>
+                                <h4 class="font-semibold mb-2">Award Badge Scout member at 4th Gampaha Scout Group, Galahitiyawa Central College, Ganemulla | May 2010 – June 2015 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Participate three Siyane Jamborates in Gampaha District, Sri Lanka 2013-2015 <a style="color:blue;target:_blank;" href = "https://www.facebook.com/share/12Gu4zc3A4F/?mibextid=wwXIfr">Reference</a> </li>
+				    <li>Participate 29th Asia Pacific Regional Scout Jamboree, Dambulla Sri Lanka 2012</li>
+				    <li>Participate 8th National Scout Jamboree, Hambantota Sri Lanka 2010 </li>
+				    <li>Attend All Island school hiking competitions 2010-2015</li>
+
+                                </ul>
+                            </div>
+                    </div>
+		</div>
+		<!-- Certifications -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Certifications</h2>
+			<div class="space-y-6">
+			    <div>
+                                <h4 class="font-semibold mb-2">AI/ML Engineer – Stage 1 | Aug 2024</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Sri Lanka Institute of Information Technology, Faculty of Computing, Sri Lanka <a style="color:blue;target:_blank;" href="https://code.sliit.org/certificates/hil2get2bk">Credential</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Python for Beginners | Sep 2022 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>University of Moratuwa, Sri Lanka (code: IlrsrL0Bes) <a style="color:blue;target:_blank;" href="https://open.uom.lk/lms/mod/customcert/verify_certificate.php">Credential</a> </li>
+                             </div>
+			     <div>
+                                <h4 class="font-semibold mb-2">Introduction to Data Engineering | Jun 2021 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>IBM, Coursera <a style="color:blue;target:_blank;" href="https://coursera.org/share/cace0c07684549bdf2a1a731245974e9">Credential</a> </li>
+                             </div>
+
+                    </div>
+		</div>
+		<!-- Sports -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Sports</h2>
+			<div class="space-y-6">
+			    <div>
+                                <h4 class="font-semibold mb-2">Inter Faculty Championships | Nov 2019</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>1<sup>st</sup> Runner - Up at the Inter Faculty Netball Championships, University of Kelaniya </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold mb-2">Freshers Sports Program | Feb 2019 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>1<sup>st</sup> Runner - Up at the Freshers Netball Championships, University of Kelaniya</li>
+                             </div>
+			     <div>
+                                <h4 class="font-semibold mb-2">Annual Inter House Sportsmeet | Mar 2014 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>1<sup>st</sup> Place - Netball tournament, Yashodara Devi Balika Maha Vidayalaya, Gampaha, Sri Lanka</li>
+				    <li>3<sup>rd</sup> Place - Cricket (open), Yashodara Devi Balika Maha Vidayalaya, Gampaha, Sri Lanka</li>
+                             </div>
+			     <div>
+                                <h4 class="font-semibold mb-2">Annual Inter House Sportsmeet | Feb 2016 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>1<sup>st</sup> Runner - Up at Badminton tournament Under 17 Girls, WP/GM/ Galahitiyawa Central College, Ganemulla</li>
+				</ul>
+                             </div>
+			     <div>
+                                <h4 class="font-semibold mb-2">Annual Inter House Sportsmeet | Mar 2011 </h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>1<sup>st</sup> Runner - Up at Vollyball tournament Under 15 Girls, WP/GM/ Galahitiyawa Central College, Ganemulla</li>
+				</ul>
+                             </div>
+
+                    </div>
+		</div>
+		<!-- Hobbies and interests -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Hobbies and Interests</h2>
+			<div class="space-y-6">
+			    <div>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li>Design customized birthday cakes - Owner of <a style="color:blue;target:_blank;" href="https://www.instagram.com/cake_byhiru?igsh=OTV0dXRpOXQ0ejF3&utm_source=qr">Cake by Hiru</a></li>
+                                    <li>Hiking, Camping, Kayaking, Scuba Diving <a style="color:blue;target:_blank;" href="https://instagram.com/p/CZoTw3VBpRxukYxq_xgHXSoL0GFyFAwlplq2T80/">Reference</a> </li>
+				</ul>
+                             </div>
+                    </div>
+		</div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="pt-20 min-h-screen bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <h2 class="text-3xl font-bold text-center mb-4 gradient-text">Get in Touch</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                                <div>
+                                    <p class="text-gray-600"> Personal Email</p>
+                                    <a href="mailto:hirushani199@gmail.com" class="text-gray-800 hover:text-indigo-600">hirushani199@gmail.com</a>
+                                </div>
+                            </div>
+			    <div class="flex items-center space-x-4">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                                <div>
+                                    <p class="text-gray-600">Office Email</p>
+                                    <a href="mailto:amkhu231@kln.ac.lk" class="text-gray-800 hover:text-indigo-600">amkhu231@kln.ac.lk</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-phone text-indigo-600"></i>
+                                <div>
+                                    <p class="text-gray-600">Phone</p>
+                                    <a href="tel:+94710881010" class="text-gray-800 hover:text-indigo-600">+94 710881010</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                                <div>
+                                    <p class="text-gray-600">Location</p>
+                                    <p class="text-gray-800">Gampaha, Sri Lanka</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/hirushaniu/" class="text-gray-600 hover:text-indigo-600">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a href="https://github.com/Umayanga98H/" class="text-gray-600 hover:text-indigo-600">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="https://www.facebook.com/share/19oKiLxniq/?mibextid=wwXIfr" class="text-gray-600 hover:text-indigo-600">
+                                    <i class="fab fa-facebook text-2xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/hiruuuu__________/profilecard/?igsh=MTNtdzc4bno5Zm4xbw==" class="text-gray-600 hover:text-indigo-600">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@its_me_hiruu?_t=8sQN4mc9Nnr&_r=1" class="text-gray-600 hover:text-indigo-600">
+                                    <i class="fab fa-tiktok text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Google Map -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58538415223!2d79.9419574!3d7.0897217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f86bd75870f5%3A0xee362e29dcc1de4b!2sGampaha!5e0!3m2!1sen!2slk!4v1639565321784!5m2!1sen!2slk"
+                            width="100%"
+                            height="400"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            class="rounded-lg"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.textContent.toLowerCase() === pageId) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+        
+        // Handle form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
